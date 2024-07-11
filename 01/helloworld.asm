@@ -1,7 +1,7 @@
 
 section	.text
    global _start
-_start:	            ;tells linker entry point
+_start:
    mov	edx,len     ;tamanho da msg
    mov	ecx,msg     ;string da msg, que foi declarada na section.data
    mov	ebx,1       ;file descriptor (stdout)

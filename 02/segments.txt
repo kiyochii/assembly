@@ -1,0 +1,38 @@
+#Segmentos de memoria
+
+Segmentos de memoria dividem a memoria do sistema em diversas partes
+que podem ser usadas para armazenar diferentes tipos de dados e código durante
+a execução do programa.
+
+Cada segmento tem uma funcionalidade especifica.
+
+1-Segmento de Código (Code Segment ou Text Segment):
+    ->Contém o código executável do programa.
+    ->É onde as instruções do programa são armazenadas.
+    ->Geralmente, é um segmento de apenas leitura para evitar que o código seja alterado acidentalmente durante a execução.
+
+
+2-Segmento de Dados (Data Segment):
+
+    ->Armazena dados estáticos e globais usados pelo programa.
+    ->Pode conter variáveis iniciais, constantes, strings e outros dados que não mudam durante a execução.
+    ->É subdividido em:
+        .data: onde variáveis globais e estáticas são armazenadas e são inicializadas.
+        .bss: onde variáveis globais e estáticas não inicializadas são armazenadas. "BSS" significa "Block Started by Symbol".
+
+3-Segmento de Pilha (Stack Segment):
+
+    ->Utilizado para armazenar dados temporários, como variáveis locais, endereços de retorno, parâmetros de função e outros dados temporários.
+    ->Cresce e diminui dinamicamente com as chamadas de função (push e pop).
+    ->É uma estrutura de dados LIFO (Last In, First Out).
+
+4- Segmento de Heap:
+
+    ->Usado para alocação dinâmica de memória.
+    ->A memória é alocada e desalocada manualmente pelo programa, geralmente usando funções como malloc e free em C ou seus equivalentes em outras linguagens.
+    ->Cresce em direção oposta ao segmento de pilha.
+
+5- Segmento de Texto Constante (Rodata Segment):
+
+    ->Armazena dados constantes de leitura, como strings constantes e outras variáveis que não são modificadas.
+    ->Geralmente é um segmento de apenas leitura.  
