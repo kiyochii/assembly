@@ -18,11 +18,12 @@ sudo apt install nasm
 
 # Compilando
 
-    Primeiramente precisamos criar um arquivo .asm, nos exemplos utilizaremos um com o nome de
-    helloworld.asm
- ```bash
-    nasm -f elf32 helloworld.asm -o helloworld.o   # Monta o arquivo hello.asm para formato ELF 64-bit
-    ld -m elf_i386 helloworld.o -o helloworld
+Primeiramente precisamos criar um arquivo .asm, nos exemplos utilizaremos um com o nome de helloworld.asm.
+
+```bash
+nasm -f elf32 helloworld.asm -o helloworld.o    # Monta o arquivo hello.asm para formato ELF 32-bit
+ld -m elf_i386 helloworld.o -o helloworld
 ```
+
 # Depuração
     Para a depuração poderá ser utilizado o GDB (GNU Debugger)
